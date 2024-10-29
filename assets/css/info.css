@@ -9,6 +9,7 @@
   justify-content: center;
   gap: 15rem;
   border-right: 1px solid;
+  border-image: linear-gradient(#727275, #6c63ff) 1;
 
   & img{
     width: 70%;
