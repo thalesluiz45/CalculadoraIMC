@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-bg{
+  background-color: #171717;
+
+  font-size: 2rem;
+  color: white;
+
+  display: grid;
+  grid-template-areas: "info calculator";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+  
+}
+
+
