@@ -20,6 +20,34 @@ html {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100vh;
   
+  transition: .5s;
 }
 
+.main-bg.light{
+  background-color: #e4e4e4;
+  color: #171717;
 
+  & .info-main{
+    border-image: linear-gradient(#727275, #2c2c31) 1;
+  }
+
+  & .info-text{
+    background-color: #dad9d9;
+  }
+
+  & footer, input, footer a, .main-calc label{
+    color: #171717;
+  }
+
+  & .main-calc{
+    background-color: #dad9d9;
+  }
+
+  & .input-field{
+    background-color: #c4c4c4;
+  }
+
+  & #calcular{
+  background-color: #4b9320;
+  }
+}

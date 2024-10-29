@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="assets/css/calculator.css" />
     <link rel="stylesheet" href="assets/css/info.css" />
+    <link rel="stylesheet" href="assets/css/switch.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <link
@@ -25,19 +26,22 @@
     />
   </head>
   <body class="main-bg">
+    
     <aside class="info-main">
       <div class="info-content">
-        <h1>O que é IMC?</h1>
-        <p class="info-text">
-          O <strong>Índice de Massa Corporal</strong> (IMC) é uma medida para
-          avaliar se o peso de uma pessoa está adequado à sua altura. Calcula-se
-          dividindo o peso (kg) pela altura (m) ao quadrado. O IMC classifica o
-          peso em categorias como "abaixo do peso", "normal", "sobrepeso" e
-          "obesidade", servindo como referência para avaliar riscos de saúde
-          relacionados ao peso. Você pode saber mais clicando <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm#:~:text=O%20IMC%20(%C3%8Dndice%20de%20Massa,o%20peso%20ideal%20ou%20n%C3%A3o." target="_blank">aqui.</a>
-        </p>
+        <div class="about">
+          <h1>O que é IMC?</h1>
+          <p class="info-text">
+            O <strong>Índice de Massa Corporal</strong> (IMC) é uma medida para
+            avaliar se o peso de uma pessoa está adequado à sua altura. Calcula-se
+            dividindo o peso (kg) pela altura (m) ao quadrado. O IMC classifica o
+            peso em categorias como "abaixo do peso", "normal", "sobrepeso" e
+            "obesidade", servindo como referência para avaliar riscos de saúde
+            relacionados ao peso. Você pode saber mais clicando <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm#:~:text=O%20IMC%20(%C3%8Dndice%20de%20Massa,o%20peso%20ideal%20ou%20n%C3%A3o." target="_blank">aqui.</a>
+          </p>
+        </div>
 
-        <img src="assets/personal_training.svg" alt="Pessoas se exercitando" />
+        <img id="image" src="assets/personal_training.svg" alt="Pessoas se exercitando" />
 
         <footer>
           <sub>Made with 💜 by Thales Luiz.</sub>
@@ -51,6 +55,14 @@
     </aside>
 
     <section class="main-content">
+      <div class="toggle-switch" >
+        <label class="switch-label" >
+          <input type="checkbox" class="checkbox" id="light-btn">
+          <span class="slider"></span>
+        </label>
+      </div>
+       
+
       <div class="main-calc">
         <form id="form">
           <h2>Calculadora - IMC</h2>
@@ -59,7 +71,7 @@
             <label for="peso"> Peso em KG </label>
             <div class="input-field">
               <i class="fa-solid fa-weight-hanging"></i>
-              <input type="number" id="peso" required />
+              <input type="number" id="peso" name="peso" required />
               <span> Kg </span>
             </div>
           </div>
@@ -68,7 +80,7 @@
             <label for="altura"> Altura em metros </label>
             <div class="input-field">
               <i class="fa-solid fa-ruler"></i>
-              <input type="number" step="0.01" id="altura" required />
+              <input type="number" step="0.01" name="altura" id="altura" required />
               <span> m </span>
             </div>
           </div>
@@ -91,5 +103,6 @@
     </section>
 
     <script src="js/script.js"></script>
+    <script src="js/toggle_btn.js"></script>
   </body>
 </html>

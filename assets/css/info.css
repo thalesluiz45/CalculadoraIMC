@@ -24,7 +24,7 @@
     font-size: 1.5rem;
     text-align: justify;
     padding: 2.5rem 2rem;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 
     background-color: #212121;
     box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.3);
@@ -70,6 +70,12 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+
+  & .about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
   
 }
-
