@@ -12,8 +12,7 @@
 </a>
 </p>
 
-<p align="center">
-<img src="https://i.imgur.com/AWIjeWj.png" width=900>
+<img src="https://i.imgur.com/4lxDdwm.png" width=900>
 
 </div>
 
@@ -39,7 +38,7 @@ $ cd CalculadoraIMC
 
 ```
 ___
-<div>
-  <img align="left" src="https://i.imgur.com/Zyminxg.png" width=35 alt="Profile"/>
+<div align="center">
+  <img align="center" src="https://i.imgur.com/Zyminxg.png" width=35 alt="Profile"/>
   <sub>Made with 🤍 by <a href="https://github.com/thalesluiz45">Thales Luiz</a></sub>
 </div>
